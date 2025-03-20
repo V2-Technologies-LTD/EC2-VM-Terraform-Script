@@ -89,7 +89,7 @@ resource "azurerm_storage_account" "my_storage_account" {
 
 # Create virtual machine
 resource "azurerm_windows_virtual_machine" "main" {
-  name                  = "${var.prefix}-vm"
+  name                  = "DevOps-Test"
   admin_username        = "azureuser"
   admin_password        = random_password.password.result
   location              = azurerm_resource_group.rg.location
