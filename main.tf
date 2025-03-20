@@ -143,7 +143,7 @@ resource "random_id" "random_id" {
 }
 
 resource "random_password" "password" {
-  length      = 20
+  length      = 10
   min_lower   = 1
   min_upper   = 1
   min_numeric = 1
